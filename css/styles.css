@@ -1,0 +1,264 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	background-color: #f3f3f3;
+}
+
+h3 {
+	font-family: "Fjalla One", sans-serif;
+}
+
+p {
+	font-family: Cantarell, sans-serif;
+	text-align: center;
+}
+
+a:hover {
+	opacity: 0.7;
+}
+
+
+
+/*
+ *
+ H E A D E R
+ *
+ */
+
+header {
+	background-color: #fff;
+	width: 100%;
+	height: 70px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.name-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.header-name-1 {
+	font-family: "Fjalla One", sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	color: #444444;
+}
+
+.header-name-2 {
+	font-family: Cantarell, sans-serif;
+	font-size: 18px;
+	color: #444444;
+}
+
+/*
+ *
+ H E R O   I M A G E
+ *
+ */
+
+.hero {
+	width: 100%;
+	height: calc(100vh - 70px);
+	background-image: url(../img/hero-image.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.hero h1 {
+	font-family: "Fajalla One", sans-serif;
+	font-size: 60px;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 2px 2px #111;
+	text-align: center;
+}
+
+.hero h2 {
+	font-family: Cantarell, sans-serif;
+	color: #fff;
+	font-size: 1.8em;
+	text-shadow: 2px 2px 8px #111;
+	text-align: center;
+}
+
+/*
+ *
+ S K I L L S   S E C T I O N
+ *
+ */
+ .skills h3 {
+ 	margin: 3%;
+	text-align: center;
+	font-size: 1.5rem;	
+ }
+
+.container-1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #fff;
+
+}
+ .item-1,
+ .item-2 {
+ 	margin: 3%;
+ }
+
+ /*
+  *
+  F E A T U R E D   W O R K
+  *
+  */
+.work h3 {
+	margin: 3%;
+	text-align: center;
+}
+
+.work-name {
+	font-size: 1.5rem;
+}
+
+.work p {
+	padding: 10px;
+}
+
+.container-2 {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+	width: 100%;
+	background-color: #fff;
+	padding-bottom: 10px;
+}
+
+
+.box img {
+	width: 100%;
+	height: 60%;
+}
+
+.work a {
+	color: #111;
+}
+
+.work a:hover {
+	color: #BDC1CB;
+}
+
+ /*
+  *
+  F O O T E R
+  *
+  */
+footer {
+	padding: 10px;
+	background-color: #363534;
+	font-family: Cantarell, sans-serif;
+	color: #fff;
+	text-align: center;
+}
+
+
+/* M E D I A    Q U E R I E S */
+
+/* Tablet Styles */
+@media only screen and (min-width: 440px) and (max-width: 569px){
+	.container-2 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.box {
+		width: 80%;
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (min-width: 570px) and (max-width: 960px){
+	p {
+		font-size: 1.15rem;
+	}
+
+	.container-2 {
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.card-1{
+		width: 45.5%;
+		margin: 0 3%;
+	}
+	.card-2 {
+		width: 45.5%;
+		margin-right: 3%;
+	}
+
+	.card-3 {
+		width: 45.5%;
+		margin: 3% 3%;
+	}
+
+	.box img {
+		width: 100%;
+		height: 60%;
+		display: flex;
+	}
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+	main {
+		width: 960px;
+		margin: 0 auto;
+	}
+
+	.container-2 {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.card-1,
+	.card-2 {
+		margin-right: 3%;
+	}
+
+	.box {
+		width: 31.33%;
+		margin-bottom: 3%;
+	}
+
+	.box img {
+		width: 100%;
+		height: 60%;
+		display: flex;
+	}
+
+
+	p  {
+		font-size: 1.15rem;
+		line-height: 1.5;
+	}
+}
